@@ -11,11 +11,11 @@ def naive_bayes_classifier(dataset_filepath, snake_measurements=None):
   # Disect the dataset into sub-datasets where each contains one class
   grouped = df.groupby("class")
 
-  # Calculate the mean of the length feature of each class
+  # Calculate the mean of every feature in each class
   mean_df = grouped.mean()
   # print(mean_df)
 
-  # Calculate the std of the length feature of each class
+  # Calculate the std of every feature in each class
   std_df = grouped.std()
   # print(std_df)
 
